@@ -15,7 +15,6 @@ spec:
         image: deekshithsn/nginxhttps
         command: ["/home/auto-reload-nginx.sh"]
         ports:
-        - containerPort: 443
         - containerPort: 80
         livenessProbe:
             httpGet:
